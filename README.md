@@ -1,4 +1,4 @@
-# LocationKit - The CoreLocation wrapper
+# RALocationKit - The CoreLocation wrapper
 
 [![Language](http://img.shields.io/badge/language-swift-brightgreen.svg?style=flat
 )](https://developer.apple.com/swift)
