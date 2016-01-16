@@ -10,9 +10,9 @@
 Get the location of the user in just a few lines of code. This CoreLocation wrapper makes your location handling a blast!
 This framework makes your life easier when it comes to location-handling in your Swift application. It makes use of completion-block instead of delegate pattern, for a convenient and clean implementation.
 
-
 #Installation
-The framework require a minimum deployment target of iOS 9
+The framework require a minimum deployment target of iOS 8.3
+
 ##Manual
 Simply copy files `LocationKit.swift`, `LocationKitClient.swift`, `LocationKitConvenience.swift`, `LocationKitErrorHandler.swift` to your Xcode project
 
@@ -25,6 +25,7 @@ pod "RALocationKit"
 ```
 
 and run `pod install`
+
 
 #Getting started
 ##Initialise
