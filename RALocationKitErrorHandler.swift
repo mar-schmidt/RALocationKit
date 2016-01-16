@@ -1,6 +1,6 @@
 //
-//  LocationKitErrorHandler.swift
-//  LocationKitLab
+//  RALocationKitErrorHandler.swift
+//  RALocationKitLab
 //
 //  Created by Marcus Ronélius on 2016-01-13.
 //  Copyright © 2016 Ronelium Applications. All rights reserved.
@@ -8,8 +8,8 @@
 
 import Foundation
 
-extension LocationKitClient {
-    enum LocationKitError: ErrorType {
+extension RALocationKitClient {
+    enum RALocationKitError: ErrorType {
         case BadAuthorization(AuthorizationStatus)
         case OK
     }
@@ -22,7 +22,7 @@ extension LocationKitClient {
         case GeneralError
     }
     
-    func generatedLocationError(error: NSError?) -> LocationKitError? {
+    func generatedLocationError(error: NSError?) -> RALocationKitError? {
         
         guard (error == nil) else {
             return self.handleNSError(error!)
@@ -31,20 +31,20 @@ extension LocationKitClient {
         return nil
     }
     
-    internal func handleNSError(error: NSError) -> LocationKitError {
+    internal func handleNSError(error: NSError) -> RALocationKitError {
         switch error.userInfo["AuthorizationStatus"] {
         case "Restricted" as String:
-            return LocationKitError.BadAuthorization(.Restricted)
+            return RALocationKitError.BadAuthorization(.Restricted)
         case "Denied" as String:
-            return LocationKitError.BadAuthorization(.Denied)
+            return RALocationKitError.BadAuthorization(.Denied)
         case "NotDetermined" as String:
-            return LocationKitError.BadAuthorization(.NotDetermined)
+            return RALocationKitError.BadAuthorization(.NotDetermined)
         default:
-            return LocationKitError.BadAuthorization(.GeneralError)
+            return RALocationKitError.BadAuthorization(.GeneralError)
         }
     }
     
-    internal func generateNSError(error: LocationKitError) -> NSError {
+    internal func generateNSError(error: RALocationKitError) -> NSError {
         switch error {
         case .BadAuthorization(.Restricted):
             return nsErrorWithCode(0, authStatus: "Restricted")

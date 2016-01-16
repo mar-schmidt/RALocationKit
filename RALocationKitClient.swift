@@ -1,6 +1,6 @@
 //
-//  LocationKitClient.swift
-//  LocationKitLab
+//  RALocationKitClient.swift
+//  RALocationKitLab
 //
 //  Created by Marcus Ronélius on 2016-01-13.
 //  Copyright © 2016 Ronelium Applications. All rights reserved.
@@ -9,7 +9,7 @@
 import Foundation
 import CoreLocation
 
-class LocationKitClient: NSObject, CLLocationManagerDelegate {
+class RALocationKitClient: NSObject, CLLocationManagerDelegate {
     
     lazy var locationManager: CLLocationManager = {
         let locationManager = CLLocationManager()
@@ -17,8 +17,8 @@ class LocationKitClient: NSObject, CLLocationManagerDelegate {
         return locationManager
     }()
     
-    // Completion handler is used to report back to LocationKitConvenience
-    typealias locationCompletionHandler = (location: CLLocation?, error: LocationKitError?) -> Void
+    // Completion handler is used to report back to RALocationKitConvenience
+    typealias locationCompletionHandler = (location: CLLocation?, error: RALocationKitError?) -> Void
     var completionHandler: locationCompletionHandler?
     
     // locationManagers requestLocation seems to be fireing multiple times. we do not want that
@@ -28,9 +28,9 @@ class LocationKitClient: NSObject, CLLocationManagerDelegate {
     var accuracy: CLLocationAccuracy?
     
     // Shared instance
-    func sharedInstance() -> LocationKitClient {
+    func sharedInstance() -> RALocationKitClient {
         struct Singleton {
-            static var sharedInstance = LocationKitClient()
+            static var sharedInstance = RALocationKitClient()
         }
         return Singleton.sharedInstance
     }
@@ -57,7 +57,7 @@ class LocationKitClient: NSObject, CLLocationManagerDelegate {
             self.locationManager.requestLocation()
         } else {
             // Not authorized
-            if authorization.1 == LocationKitClient.AuthorizationStatus.NotDetermined {
+            if authorization.1 == RALocationKitClient.AuthorizationStatus.NotDetermined {
                 if (NSBundle.mainBundle().objectForInfoDictionaryKey("NSLocationAlwaysUsageDescription") != nil) {
                     self.locationManager.requestAlwaysAuthorization()
                     return
@@ -65,11 +65,11 @@ class LocationKitClient: NSObject, CLLocationManagerDelegate {
                     self.locationManager.requestWhenInUseAuthorization()
                     return
                 } else {
-                    print("\nLocationKit:\nPlease set option\n\"NSLocationWhenInUseUsageDescription\"\nor\n\"NSLocationAlwaysUsageDescription\"\nin your info.plist before use\n")
+                    print("\nRALocationKit:\nPlease set option\n\"NSLocationWhenInUseUsageDescription\"\nor\n\"NSLocationAlwaysUsageDescription\"\nin your info.plist before use\n")
                 }
             }
             // Throw error since user has probably choosen not to accept location tracking
-            throw LocationKitError.BadAuthorization(authorization.1)
+            throw RALocationKitError.BadAuthorization(authorization.1)
         }
     }
     
