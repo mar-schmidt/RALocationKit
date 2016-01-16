@@ -1,0 +1,14 @@
+PODS:
+  - RALocationKit (0.1.0)
+
+DEPENDENCIES:
+  - RALocationKit (from `../`)
+
+EXTERNAL SOURCES:
+  RALocationKit:
+    :path: ../
+
+SPEC CHECKSUMS:
+  RALocationKit: 7fcb4952a39a35a669a9e632531d2bf9244ff63d
+
+COCOAPODS: 0.39.0

@@ -1,0 +1,6 @@
+framework module RALocationKit {
+  umbrella header "RALocationKit-umbrella.h"
+
+  export *
+  module * { export * }
+}

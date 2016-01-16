@@ -1,0 +1,6 @@
+framework module Pods_RALocationKit_Tests {
+  umbrella header "Pods-RALocationKit_Tests-umbrella.h"
+
+  export *
+  module * { export * }
+}

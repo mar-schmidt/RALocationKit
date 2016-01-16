@@ -1,0 +1,639 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		2C7BDC3B1C4AA1BA004796D1 /* RALocationKit.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C7BDC371C4AA1BA004796D1 /* RALocationKit.swift */; };
+		2C7BDC3C1C4AA1BA004796D1 /* RALocationKitClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C7BDC381C4AA1BA004796D1 /* RALocationKitClient.swift */; };
+		2C7BDC3D1C4AA1BA004796D1 /* RALocationKitConvenience.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C7BDC391C4AA1BA004796D1 /* RALocationKitConvenience.swift */; };
+		2C7BDC3E1C4AA1BA004796D1 /* RALocationKitErrorHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C7BDC3A1C4AA1BA004796D1 /* RALocationKitErrorHandler.swift */; };
+		4E9E65838ABABB28816E1AC6C56AE2C0 /* RALocationKit.bundle in Resources */ = {isa = PBXBuildFile; fileRef = A1F5A8ECB6C25B4F0F1E972778F75D32 /* RALocationKit.bundle */; };
+		6B508AD7FE5A90EB711E7F6707D5C85A /* Pods-RALocationKit_Tests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 9A51A62B1D7C7AA8E8507A8D142A676D /* Pods-RALocationKit_Tests-dummy.m */; };
+		9333BAB92398810C5155AB7152844C36 /* RALocationKit-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 74DA6CAAC8412A758E7AB89AC021FAA4 /* RALocationKit-dummy.m */; };
+		A983FB11017AC3B847164E51D0A06B78 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3E4E89230EF59BC255123B67864ACF77 /* Foundation.framework */; };
+		D454F3EAECB5A11C19E8846E0CF40801 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3E4E89230EF59BC255123B67864ACF77 /* Foundation.framework */; };
+		EC102D6C9786E04C474666636D010774 /* RALocationKit-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 60C46C77875B342417EB100781A4057B /* RALocationKit-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		FC4B39B78A6DEEDA2F1201DBF1ACEDD5 /* Pods-RALocationKit_Tests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = F877001B7BDFC208AAD4B4F7C77DB11D /* Pods-RALocationKit_Tests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		16422EC7D0C264976A3191C35BB0D7C4 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 14E480977DABD5C5D0F5C482BCCDCBBB;
+			remoteInfo = "RALocationKit-RALocationKit";
+		};
+		4527C2D156EB892727095434CDD39677 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = DF9B280597B1D4E454719880959F31A0;
+			remoteInfo = RALocationKit;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		07F25C42AC2258E67B0DA9B8F34ECDF2 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		2C7BDC371C4AA1BA004796D1 /* RALocationKit.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RALocationKit.swift; sourceTree = "<group>"; };
+		2C7BDC381C4AA1BA004796D1 /* RALocationKitClient.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RALocationKitClient.swift; sourceTree = "<group>"; };
+		2C7BDC391C4AA1BA004796D1 /* RALocationKitConvenience.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RALocationKitConvenience.swift; sourceTree = "<group>"; };
+		2C7BDC3A1C4AA1BA004796D1 /* RALocationKitErrorHandler.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RALocationKitErrorHandler.swift; sourceTree = "<group>"; };
+		2EC22AB7A031CA54DF6703E7FE90FB17 /* RALocationKit.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = RALocationKit.modulemap; sourceTree = "<group>"; };
+		30AFF7B070162E5CBF8890F12DC46D0A /* RALocationKit-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "RALocationKit-prefix.pch"; sourceTree = "<group>"; };
+		3444FAED86EEC4846230BA9B2B859F17 /* Pods-RALocationKit_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-RALocationKit_Tests.release.xcconfig"; sourceTree = "<group>"; };
+		3E4E89230EF59BC255123B67864ACF77 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS9.0.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		4E99F82FB8D2746F1BDF955B68FD3677 /* Pods-RALocationKit_Tests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-RALocationKit_Tests-acknowledgements.markdown"; sourceTree = "<group>"; };
+		60C46C77875B342417EB100781A4057B /* RALocationKit-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "RALocationKit-umbrella.h"; sourceTree = "<group>"; };
+		74DA6CAAC8412A758E7AB89AC021FAA4 /* RALocationKit-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "RALocationKit-dummy.m"; sourceTree = "<group>"; };
+		7A008019F3F9666D64355FB97CBC9F8F /* Pods-RALocationKit_Tests-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-RALocationKit_Tests-resources.sh"; sourceTree = "<group>"; };
+		7C35E576BAFEDB1BBA3F2F31A9CC6B07 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		7E262CAA5BB51A516707A9C4697596FB /* RALocationKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = RALocationKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		7ED8A87EA619E2C20296355669864BD3 /* Pods-RALocationKit_Tests-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-RALocationKit_Tests-frameworks.sh"; sourceTree = "<group>"; };
+		9A51A62B1D7C7AA8E8507A8D142A676D /* Pods-RALocationKit_Tests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-RALocationKit_Tests-dummy.m"; sourceTree = "<group>"; };
+		A1F5A8ECB6C25B4F0F1E972778F75D32 /* RALocationKit.bundle */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = RALocationKit.bundle; sourceTree = BUILT_PRODUCTS_DIR; };
+		A2AF8229063936D591E118C66C7FBEDC /* Pods_RALocationKit_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_RALocationKit_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		A81C5A965B464E502228FCD665CF06C7 /* Pods-RALocationKit_Tests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-RALocationKit_Tests-acknowledgements.plist"; sourceTree = "<group>"; };
+		BA6428E9F66FD5A23C0A2E06ED26CD2F /* Podfile */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		BB646E045D2BC82FC77B5ABF44B25155 /* Pods-RALocationKit_Tests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = "Pods-RALocationKit_Tests.modulemap"; sourceTree = "<group>"; };
+		E4313C6A2450FC4A276CA3DE539A2A70 /* Pods-RALocationKit_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-RALocationKit_Tests.debug.xcconfig"; sourceTree = "<group>"; };
+		F2DEFEB07BD59ED5C986E327EB8A8EBF /* RALocationKit.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = RALocationKit.xcconfig; sourceTree = "<group>"; };
+		F877001B7BDFC208AAD4B4F7C77DB11D /* Pods-RALocationKit_Tests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-RALocationKit_Tests-umbrella.h"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		C2F86E409842E080A324DF5D84151C98 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A983FB11017AC3B847164E51D0A06B78 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C369EB497E669DEF68601F27EC8B7DB0 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E21A4D6ECF958FFD9D771524F45AD5C9 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D454F3EAECB5A11C19E8846E0CF40801 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		152105C273B46B91336FA97446D558F3 /* Development Pods */ = {
+			isa = PBXGroup;
+			children = (
+				755B134A479386DD7BE0CB73A3C2CC5D /* RALocationKit */,
+			);
+			name = "Development Pods";
+			sourceTree = "<group>";
+		};
+		36FBF11B66D20E95910BC362F8BED364 /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				2C7BDC371C4AA1BA004796D1 /* RALocationKit.swift */,
+				2C7BDC381C4AA1BA004796D1 /* RALocationKitClient.swift */,
+				2C7BDC391C4AA1BA004796D1 /* RALocationKitConvenience.swift */,
+				2C7BDC3A1C4AA1BA004796D1 /* RALocationKitErrorHandler.swift */,
+			);
+			path = Classes;
+			sourceTree = "<group>";
+		};
+		4FD78A10F4099FE853C3D71045BC12F9 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				7C35E576BAFEDB1BBA3F2F31A9CC6B07 /* Info.plist */,
+				2EC22AB7A031CA54DF6703E7FE90FB17 /* RALocationKit.modulemap */,
+				F2DEFEB07BD59ED5C986E327EB8A8EBF /* RALocationKit.xcconfig */,
+				74DA6CAAC8412A758E7AB89AC021FAA4 /* RALocationKit-dummy.m */,
+				30AFF7B070162E5CBF8890F12DC46D0A /* RALocationKit-prefix.pch */,
+				60C46C77875B342417EB100781A4057B /* RALocationKit-umbrella.h */,
+			);
+			name = "Support Files";
+			path = "Example/Pods/Target Support Files/RALocationKit";
+			sourceTree = "<group>";
+		};
+		62CE6158C36B5570A7FEEB6D35B52638 /* Pods-RALocationKit_Tests */ = {
+			isa = PBXGroup;
+			children = (
+				07F25C42AC2258E67B0DA9B8F34ECDF2 /* Info.plist */,
+				BB646E045D2BC82FC77B5ABF44B25155 /* Pods-RALocationKit_Tests.modulemap */,
+				4E99F82FB8D2746F1BDF955B68FD3677 /* Pods-RALocationKit_Tests-acknowledgements.markdown */,
+				A81C5A965B464E502228FCD665CF06C7 /* Pods-RALocationKit_Tests-acknowledgements.plist */,
+				9A51A62B1D7C7AA8E8507A8D142A676D /* Pods-RALocationKit_Tests-dummy.m */,
+				7ED8A87EA619E2C20296355669864BD3 /* Pods-RALocationKit_Tests-frameworks.sh */,
+				7A008019F3F9666D64355FB97CBC9F8F /* Pods-RALocationKit_Tests-resources.sh */,
+				F877001B7BDFC208AAD4B4F7C77DB11D /* Pods-RALocationKit_Tests-umbrella.h */,
+				E4313C6A2450FC4A276CA3DE539A2A70 /* Pods-RALocationKit_Tests.debug.xcconfig */,
+				3444FAED86EEC4846230BA9B2B859F17 /* Pods-RALocationKit_Tests.release.xcconfig */,
+			);
+			name = "Pods-RALocationKit_Tests";
+			path = "Target Support Files/Pods-RALocationKit_Tests";
+			sourceTree = "<group>";
+		};
+		755B134A479386DD7BE0CB73A3C2CC5D /* RALocationKit */ = {
+			isa = PBXGroup;
+			children = (
+				CC6AD3A819D1019237C105A5C090B97C /* Pod */,
+				4FD78A10F4099FE853C3D71045BC12F9 /* Support Files */,
+			);
+			name = RALocationKit;
+			path = ../..;
+			sourceTree = "<group>";
+		};
+		7DB346D0F39D3F0E887471402A8071AB = {
+			isa = PBXGroup;
+			children = (
+				BA6428E9F66FD5A23C0A2E06ED26CD2F /* Podfile */,
+				152105C273B46B91336FA97446D558F3 /* Development Pods */,
+				BC3CA7F9E30CC8F7E2DD044DD34432FC /* Frameworks */,
+				E20C4DFE306C8D82288031D22387E6EB /* Products */,
+				864FDAA8299CCC7E149AC146182531FB /* Targets Support Files */,
+			);
+			sourceTree = "<group>";
+		};
+		864FDAA8299CCC7E149AC146182531FB /* Targets Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				62CE6158C36B5570A7FEEB6D35B52638 /* Pods-RALocationKit_Tests */,
+			);
+			name = "Targets Support Files";
+			sourceTree = "<group>";
+		};
+		BC3CA7F9E30CC8F7E2DD044DD34432FC /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				BF6342C8B29F4CEEA088EFF7AB4DE362 /* iOS */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		BF6342C8B29F4CEEA088EFF7AB4DE362 /* iOS */ = {
+			isa = PBXGroup;
+			children = (
+				3E4E89230EF59BC255123B67864ACF77 /* Foundation.framework */,
+			);
+			name = iOS;
+			sourceTree = "<group>";
+		};
+		CC6AD3A819D1019237C105A5C090B97C /* Pod */ = {
+			isa = PBXGroup;
+			children = (
+				36FBF11B66D20E95910BC362F8BED364 /* Classes */,
+			);
+			path = Pod;
+			sourceTree = "<group>";
+		};
+		E20C4DFE306C8D82288031D22387E6EB /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				A2AF8229063936D591E118C66C7FBEDC /* Pods_RALocationKit_Tests.framework */,
+				A1F5A8ECB6C25B4F0F1E972778F75D32 /* RALocationKit.bundle */,
+				7E262CAA5BB51A516707A9C4697596FB /* RALocationKit.framework */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		5D9D0ECFA7CA7B020616AD42B976C7EE /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FC4B39B78A6DEEDA2F1201DBF1ACEDD5 /* Pods-RALocationKit_Tests-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7E7FF589C4F58FF2E910B7F9CA914CCF /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EC102D6C9786E04C474666636D010774 /* RALocationKit-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		14E480977DABD5C5D0F5C482BCCDCBBB /* RALocationKit-RALocationKit */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 647BE3A948B2CCCEF7652E07D1BA97DA /* Build configuration list for PBXNativeTarget "RALocationKit-RALocationKit" */;
+			buildPhases = (
+				6F59F0E36D052DBD1FA0799D3CDE2601 /* Sources */,
+				C369EB497E669DEF68601F27EC8B7DB0 /* Frameworks */,
+				0AF610E25D19BDE33A90B5E2C0982728 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "RALocationKit-RALocationKit";
+			productName = "RALocationKit-RALocationKit";
+			productReference = A1F5A8ECB6C25B4F0F1E972778F75D32 /* RALocationKit.bundle */;
+			productType = "com.apple.product-type.bundle";
+		};
+		D50867FCA5C031896F87552823A0E1D1 /* Pods-RALocationKit_Tests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 489008DF714CB0A0BBB1DE745F81A131 /* Build configuration list for PBXNativeTarget "Pods-RALocationKit_Tests" */;
+			buildPhases = (
+				72FA5CA26570EDBE2551D05C0315CA7D /* Sources */,
+				E21A4D6ECF958FFD9D771524F45AD5C9 /* Frameworks */,
+				5D9D0ECFA7CA7B020616AD42B976C7EE /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				87C11D0189A0CAB81B922957ACAD9067 /* PBXTargetDependency */,
+			);
+			name = "Pods-RALocationKit_Tests";
+			productName = "Pods-RALocationKit_Tests";
+			productReference = A2AF8229063936D591E118C66C7FBEDC /* Pods_RALocationKit_Tests.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		DF9B280597B1D4E454719880959F31A0 /* RALocationKit */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 5C320222A3A6E5C1B926C65298E9A331 /* Build configuration list for PBXNativeTarget "RALocationKit" */;
+			buildPhases = (
+				D472C78BF54A621FE0EA40B87E54513C /* Sources */,
+				C2F86E409842E080A324DF5D84151C98 /* Frameworks */,
+				5B4A55DB64DF3F4644DD949E7CB18308 /* Resources */,
+				7E7FF589C4F58FF2E910B7F9CA914CCF /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				CDEB2B26AA369D0FB43E2F6C9389492D /* PBXTargetDependency */,
+			);
+			name = RALocationKit;
+			productName = RALocationKit;
+			productReference = 7E262CAA5BB51A516707A9C4697596FB /* RALocationKit.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		D41D8CD98F00B204E9800998ECF8427E /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0720;
+				LastUpgradeCheck = 0720;
+			};
+			buildConfigurationList = 2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 7DB346D0F39D3F0E887471402A8071AB;
+			productRefGroup = E20C4DFE306C8D82288031D22387E6EB /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				D50867FCA5C031896F87552823A0E1D1 /* Pods-RALocationKit_Tests */,
+				DF9B280597B1D4E454719880959F31A0 /* RALocationKit */,
+				14E480977DABD5C5D0F5C482BCCDCBBB /* RALocationKit-RALocationKit */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		0AF610E25D19BDE33A90B5E2C0982728 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5B4A55DB64DF3F4644DD949E7CB18308 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4E9E65838ABABB28816E1AC6C56AE2C0 /* RALocationKit.bundle in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		6F59F0E36D052DBD1FA0799D3CDE2601 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		72FA5CA26570EDBE2551D05C0315CA7D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2C7BDC3B1C4AA1BA004796D1 /* RALocationKit.swift in Sources */,
+				2C7BDC3E1C4AA1BA004796D1 /* RALocationKitErrorHandler.swift in Sources */,
+				2C7BDC3C1C4AA1BA004796D1 /* RALocationKitClient.swift in Sources */,
+				2C7BDC3D1C4AA1BA004796D1 /* RALocationKitConvenience.swift in Sources */,
+				6B508AD7FE5A90EB711E7F6707D5C85A /* Pods-RALocationKit_Tests-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D472C78BF54A621FE0EA40B87E54513C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9333BAB92398810C5155AB7152844C36 /* RALocationKit-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		87C11D0189A0CAB81B922957ACAD9067 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = RALocationKit;
+			target = DF9B280597B1D4E454719880959F31A0 /* RALocationKit */;
+			targetProxy = 4527C2D156EB892727095434CDD39677 /* PBXContainerItemProxy */;
+		};
+		CDEB2B26AA369D0FB43E2F6C9389492D /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "RALocationKit-RALocationKit";
+			target = 14E480977DABD5C5D0F5C482BCCDCBBB /* RALocationKit-RALocationKit */;
+			targetProxy = 16422EC7D0C264976A3191C35BB0D7C4 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		10DE1947DAC0ED28F6C0A9F9BD75D546 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_PREPROCESSOR_DEFINITIONS = "RELEASE=1";
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
+				STRIP_INSTALLED_PRODUCT = NO;
+				SYMROOT = "${SRCROOT}/../build";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		2C9841C817F0EB9A81A2F0FDA621F071 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = F2DEFEB07BD59ED5C986E327EB8A8EBF /* RALocationKit.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/RALocationKit/RALocationKit-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/RALocationKit/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/RALocationKit/RALocationKit.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = RALocationKit;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		4B82393AEF62CF5F90A8FD377B9F2B20 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = F2DEFEB07BD59ED5C986E327EB8A8EBF /* RALocationKit.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/RALocationKit/RALocationKit-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/RALocationKit/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/RALocationKit/RALocationKit.modulemap";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = RALocationKit;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		552D02D5BA751AC2E8790D2811D496CA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
+				ONLY_ACTIVE_ARCH = YES;
+				STRIP_INSTALLED_PRODUCT = NO;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Debug;
+		};
+		692286399901C3A56AE0E9AB02831E41 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3444FAED86EEC4846230BA9B2B859F17 /* Pods-RALocationKit_Tests.release.xcconfig */;
+			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				INFOPLIST_FILE = "Target Support Files/Pods-RALocationKit_Tests/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-RALocationKit_Tests/Pods-RALocationKit_Tests.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = Pods_RALocationKit_Tests;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		7CA80FB8BB05F64753483859B7AE4234 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = E4313C6A2450FC4A276CA3DE539A2A70 /* Pods-RALocationKit_Tests.debug.xcconfig */;
+			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				INFOPLIST_FILE = "Target Support Files/Pods-RALocationKit_Tests/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-RALocationKit_Tests/Pods-RALocationKit_Tests.modulemap";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = Pods_RALocationKit_Tests;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		7F4E71FE00C9F94BC6D4C722CA0A9BEB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = F2DEFEB07BD59ED5C986E327EB8A8EBF /* RALocationKit.xcconfig */;
+			buildSettings = {
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				PRODUCT_NAME = RALocationKit;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				WRAPPER_EXTENSION = bundle;
+			};
+			name = Debug;
+		};
+		BFEA3E0A1F92244C2D79DAF9A4218858 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = F2DEFEB07BD59ED5C986E327EB8A8EBF /* RALocationKit.xcconfig */;
+			buildSettings = {
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				PRODUCT_NAME = RALocationKit;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				WRAPPER_EXTENSION = bundle;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				552D02D5BA751AC2E8790D2811D496CA /* Debug */,
+				10DE1947DAC0ED28F6C0A9F9BD75D546 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		489008DF714CB0A0BBB1DE745F81A131 /* Build configuration list for PBXNativeTarget "Pods-RALocationKit_Tests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7CA80FB8BB05F64753483859B7AE4234 /* Debug */,
+				692286399901C3A56AE0E9AB02831E41 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		5C320222A3A6E5C1B926C65298E9A331 /* Build configuration list for PBXNativeTarget "RALocationKit" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4B82393AEF62CF5F90A8FD377B9F2B20 /* Debug */,
+				2C9841C817F0EB9A81A2F0FDA621F071 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		647BE3A948B2CCCEF7652E07D1BA97DA /* Build configuration list for PBXNativeTarget "RALocationKit-RALocationKit" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7F4E71FE00C9F94BC6D4C722CA0A9BEB /* Debug */,
+				BFEA3E0A1F92244C2D79DAF9A4218858 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+}
