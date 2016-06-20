@@ -31,7 +31,7 @@ and run `pod install`
 ##Initialise
 To begin with, you have to initialise the LocationKit instance.
 ```swift
-let locationKit = LocationKit()
+let locationKit = RALocationKit()
 ```
 
 ##Getting the CLLocation object
